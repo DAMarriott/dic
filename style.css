@@ -1,0 +1,45 @@
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+#history {
+  float: right;
+}
+
+.heading {
+  color: white;
+  background-color: blue;
+  padding: 1px;
+  margin: 5px;
+  top: 0;
+  left: 0;
+}
+
+.searchbox {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.list {
+  list-style: none;
+}
+
+.list li a {
+  text-decoration: none;
+}
+
+.resultbox {
+  padding: 3px;
+}
+
+.resultbox:nth-child(even) {
+  background: rgb(176, 231, 233);
+}
+
+#results {
+  width: 75%;
+}
