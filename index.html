@@ -5,19 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
+    <link href="style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
-      <h1>My Personal Dictionary</h1>
+      <div class="heading">
+        <h1>My Personal Dictionary</h1>
+      </div>
+      <div class="searchbox">
+        <form id="js-form">
+          <label for="search-term">Search Word</label>
+          <input type="text" name="search-term" id="js-search-term" required />
 
-      <form id="js-form">
-        <label for="search-term">Search Word</label>
-        <input type="text" name="search-term" id="js-search-term" required />
-
-        <input type="submit" value="Go!" />
-      </form>
-
+          <input type="submit" value="Go!" />
+        </form>
+      </div>
       <p id="js-error-message" class="error-message"></p>
+
+      <section id="history" class="hidden">
+        <h2>Search History</h2>
+        <ul id="history-list" class="list"></ul>
+      </section>
       <section id="results" class="hidden">
         <h2>Search results</h2>
         <ul id="results-list"></ul>
