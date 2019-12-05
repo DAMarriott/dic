@@ -43,3 +43,8 @@
 #results {
   width: 75%;
 }
+
+.gif div,
+#results h2 {
+  margin-left: 35px;
+}
