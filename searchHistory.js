@@ -37,3 +37,5 @@ function loadHistory() {
 export { loadHistory };
 
 export { searchHistory };
+
+export { dicHistory };
