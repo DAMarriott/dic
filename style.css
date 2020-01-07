@@ -6,10 +6,6 @@
   display: none;
 }
 
-#history {
-  float: right;
-}
-
 .heading {
   color: white;
   background-color: blue;
@@ -45,6 +41,11 @@
 }
 
 .gif div,
-#results h2 {
+#results h2,
+#history {
   margin-left: 35px;
+}
+
+.resultbox img {
+  max-width: 100%;
 }
