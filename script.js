@@ -1,6 +1,6 @@
 import { getGif } from "./gif-script.js";
 import { performSearch } from "./definition-script.js";
-import { searchHistory, loadHistory, dicHistory } from "./searchHistory.js";
+import { searchHistory, loadHistory, clearHistory } from "./searchHistory.js";
 
 function watchForm() {
   $("form").submit(event => {
@@ -16,9 +16,8 @@ function watchForm() {
 
 //clears search log
 $("button").click(event => {
-  localStorage.clear();
   $("li").empty();
-  let dicHistory = [];
+  clearHistory();
 });
 
 $(watchForm);
