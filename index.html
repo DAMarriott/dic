@@ -10,18 +10,27 @@
       href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
       <div class="heading">
-        <h1>My Personal Dictionary</h1>
+        <h1>Dic</h1>
+        <span>a personal word assisstant</span>
       </div>
+      <div class="words-container">
+        <a class="words-link" href="#history">My words</a>
+      </div>
+
       <div class="searchbox">
         <form id="js-form">
-          <label for="search-term">Search Word</label>
+          <label for="search-term">Search</label>
           <input type="text" name="search-term" id="js-search-term" required />
 
-          <input type="submit" value="Go!" />
+          <input type="submit" value="GO!" />
         </form>
       </div>
       <p id="js-error-message" class="error-message"></p>
@@ -32,8 +41,8 @@
         <ul id="results-list"></ul>
       </section>
       <section id="history" class="hidden">
-        <h2>Search History</h2>
-        <button>Clear</button>
+        <h2>My Words</h2>
+        <button>CLEAR</button>
         <ul id="history-list" class="list"></ul>
       </section>
     </div>
