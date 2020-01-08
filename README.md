@@ -10,15 +10,15 @@ Personal app to keep track of words you are learning.
 
 Home Screen/Landing Page:
 
-![home screen](screenshots/dichome.png)
+![home screen](dichome.png)
 
 Search:
 
-![search](screenshots/dicsearch.png)
+![search](dicsearch.png)
 
 Search History:
 
-![history](screenshots/dichistory.png)
+![history](dichistory.png)
 
 ## Built With
 
