@@ -5,15 +5,13 @@ const apiKey = "18fe046869afc29a3c7155152d1a5943e64ff6e0";
 const searchURL = "https://owlbot.info/api/v3/dictionary/";
 
 function displayResults(responseJson, cb) {
-  console.log(responseJson);
-
   $("#results-list").empty();
-  $("#results-list").append(`<h3>${responseJson.word}</h3>`);
+  $("#results-list").append(`<h3>${responseJson.word.toLowerCase()}</h3>
+  <p class="italic">${responseJson.pronunciation}</p>`);
   for (let i = 0; i < responseJson.definitions.length; i++) {
     $("#results-list").append(
       `<div class="resultbox">
       <p>${i + 1}. ${responseJson.definitions[i].type}</p>
-      <p>Pronunciation: ${responseJson.pronunciation}</p>
       <p>Definition: ${responseJson.definitions[i].definition}</p>
       </div>`
     );
@@ -25,7 +23,6 @@ function displayResults(responseJson, cb) {
 
 function getDefinition(query, cb) {
   const url = searchURL + query;
-  console.log(url);
 
   fetch(url, {
     headers: {
