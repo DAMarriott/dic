@@ -4,8 +4,6 @@ const SEARCH_URL =
   "https://api.giphy.com/v1/gifs/search?api_key=9wo63Zrt9s5iYbIncE5apFFDBOzSOBjQ&q=";
 
 function displayGif(responseJson) {
-  console.log(responseJson);
-
   $("#gif").empty();
   $("#gif").append(`<div class="resultbox">
   <img src="${responseJson.data[0].images.original.url}"/>
@@ -14,7 +12,6 @@ function displayGif(responseJson) {
 
 function getGif(query) {
   let url = SEARCH_URL + query;
-  console.log(url);
   fetch(url)
     .then(handleResponse)
     .then(responseJson => displayGif(responseJson))
