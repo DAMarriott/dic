@@ -1,5 +1,15 @@
 * {
-  font-family: "Raleway", sans-serif;
+  font-family: "Muli", sans-serif;
+  color: #e6e7eb;
+}
+
+body {
+  background-color: #3a3d42;
+}
+
+.heading h1 {
+  font-size: 40px;
+  margin: 5px;
 }
 
 .hidden {
@@ -8,44 +18,95 @@
 
 .heading {
   color: white;
-  background-color: blue;
-  padding: 1px;
-  margin: 5px;
-  top: 0;
-  left: 0;
+  background-color: #a0a8bd;
+  width: 100%;
+}
+
+.heading h1 {
+  display: inline-block;
+}
+
+.words-link {
+  text-decoration: none;
+  color: #3a3d42;
+  background-color: aliceblue;
+  width: 25%;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.words-container {
+  margin-top: 75px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.words-link:hover {
+  color: black;
+  background-color: #acb1bf;
 }
 
 .searchbox {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 75px;
+}
+
+input,
+button {
+  color: #3a3d42;
+  background-color: aliceblue;
+  border-radius: 6px;
+}
+
+button {
+  margin-bottom: 5px;
+}
+
+ul {
+  padding-left: 0;
 }
 
 .list {
   list-style: none;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .list li a {
   text-decoration: none;
+  font-size: larger;
 }
 
 .resultbox {
-  padding: 3px;
+  padding: 5px;
+  margin: 0;
 }
-
-.resultbox:nth-child(even) {
-  background: rgb(176, 231, 233);
+.resultbox:nth-child(odd) {
+  background: #acb1bf;
 }
 
 #results {
-  width: 75%;
+  text-align: center;
 }
 
-.gif div,
-#results h2,
 #history {
-  margin-left: 35px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-top: 50px;
+  text-align: center;
+  background-color: #a0a8bd;
+  border-radius: 10px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+#history a:hover {
+  color: #3a3d42;
+}
 .resultbox img {
   max-width: 100%;
 }
