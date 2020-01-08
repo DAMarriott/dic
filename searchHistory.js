@@ -10,7 +10,7 @@ function searchHistory(searchTerm) {
   }
   localStorage.setItem(searchTerm, searchTerm);
   dicHistory.push(searchTerm);
-  let newHistoryItem = $(`<li><a>${searchTerm}</a></li>`);
+  let newHistoryItem = $(`<li><a>${searchTerm.toLowerCase()}</a></li>`);
   newHistoryItem.click(function() {
     performSearch(searchTerm, () => {
       getGif(searchTerm);
@@ -23,7 +23,7 @@ function searchHistory(searchTerm) {
 // after page load
 function loadHistory() {
   Object.keys(localStorage).forEach(key => {
-    let newHistoryItem = $(`<li><a>${key}</a></li>`);
+    let newHistoryItem = $(`<li><a>${key.toLowerCase()}</a></li>`);
     newHistoryItem.click(function() {
       performSearch(key, () => {
         getGif(key);
@@ -34,8 +34,9 @@ function loadHistory() {
   });
 }
 
-export { loadHistory };
+function clearHistory() {
+  dicHistory = [];
+  localStorage.clear();
+}
 
-export { searchHistory };
-
-export { dicHistory };
+export { loadHistory, searchHistory, clearHistory };
